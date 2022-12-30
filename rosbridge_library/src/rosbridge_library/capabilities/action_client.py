@@ -11,11 +11,7 @@ class ActionClientRequests(Capability):
     send_goal_msg_fields = [
         (True, "action_name", str),
         (True, "action_type", str),
-        (True, "feedback", bool),
-        (False, "throttle_rate", int),
-        (False, "fragment_size", int),
-        (False, "queue_length", int),
-        (False, "compression", str),
+        (False, "feedback", bool),
     ]
 
     destroy_client_msg_fields = [(True, "action_name", str)]
